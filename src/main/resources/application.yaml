@@ -1,0 +1,2 @@
+spring.application.name=reactive-spring-boot-app
+spring.r2dbc.url=r2dbc://localhost:12701/reactive_db
