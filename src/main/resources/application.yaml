@@ -1,2 +1,17 @@
-spring.application.name=reactive-spring-boot-app
-spring.r2dbc.url=r2dbc://localhost:12701/reactive_db
+
+spring:
+  application:
+    name: reactive-spring-boot-app
+  r2dbc:
+    url: r2dbc:postgresql://localhost:12701/reactive_db
+    username: admin
+    password: admin
+  flyway:
+    user: admin
+    password: admin
+    url: jdbc:postgresql://localhost:12701/reactive_db
+    baseline-on-migrate: true
+    enabled: true
+
+server:
+  port: 7071
